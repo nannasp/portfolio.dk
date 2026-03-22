@@ -1,0 +1,12 @@
+{
+  "name": "programmering_2026",
+  "version": "1.0.0",
+  "description": "my portfolio 2026",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

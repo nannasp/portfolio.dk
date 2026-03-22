@@ -1,0 +1,365 @@
+/*mobile screen*/
+@media screen and (max-width: 767px) {
+    body {
+        margin: 15px;
+        font-size: 1.2rem;
+        display: block;
+        line-height: 1.5;
+        padding: 0;
+        width: 100wh;
+        height: vh;
+        background-color: #222222;
+        color: #f5f5f5;
+        font-family: "roboto-mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .display-mobile-info {
+        margin: 5%;
+        padding: 10%;
+        display: block;
+        text-align: center;
+        font-size: 10px;
+    }
+    .mobile-display {
+        display: none;
+    }
+
+}
+
+/*min width skærmstørrelse */
+@media screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+        font-size: 1.2rem;
+        display: block;
+        line-height: 1.5;
+        padding: 0;
+        width: 100wh;
+        height: vh;
+        background-color: #f5f5f5;
+        color: #8E3DB5;
+        font-family: "roboto-mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .display-mobile-info {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.5 rem;
+        font-weight: 700;
+    }
+
+    header {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        height: 75px;
+        top: 0;
+        margin: auto;
+        position: sticky;
+    }
+
+    ul {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .nav_list {
+        text-decoration: none;
+        float: right;
+
+    }
+
+    .nav_menu {
+        font-family: "cofo-glassier", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.4rem;
+        list-style: none;
+        display: inline;
+        margin-right: 20px;
+    }
+
+    ul :hover {
+        color: #8E3DB5;
+    }
+
+    #text {
+        color: #8E3DB5;
+    }
+
+    .homepage {
+        text-align: center;
+    }
+
+    .introtext {
+        height: 10vh;
+        margin: auto;
+        padding: 1%;
+    }
+
+    .section-presentation {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .section-presentation-txt {
+        flex: 1;
+    }
+
+    .section-presentation-p {
+        width: 80%;
+        height: auto;
+    }
+
+    .profil {
+        width: 40%;
+        object-fit: cover;
+        vertical-align: middle;
+        height: auto;
+        margin: auto;
+    }
+
+    .section-presentation-header {
+        margin: 0;
+        padding: 0% 50% 0% 0%;
+    }
+
+    section {
+        height: auto;
+        margin: auto;
+        padding: 10%;
+    }
+
+    a {
+        color: #8E3DB5;
+        text-decoration: none;
+    }
+
+    p {
+        width: 60%;
+        height: 10%;
+        color: #8E3DB5;
+    }
+
+    .txt-color {
+        color: #f5f5f5;
+    }
+
+    .txt-color:hover {
+        color: #f5f5f5;
+        font-weight: 700;
+        transition: color 0.3s ease;
+    }
+
+    .pic-container {
+        height: 500px;
+        overflow-y: scroll;
+    }
+
+    .img_sensade {
+        width: 100%;
+        margin-top: 2%;
+        border-radius: 10px;
+    }
+
+    .box_container_sensade {
+        width: 60%;
+        border: 1px;
+        border-color: #003A60;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 2% 8% 2% 8%;
+        margin-bottom: 5%;
+    }
+
+    .box_title_sensade {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #8E3DB5;
+    }
+
+    #btn-sensade,
+    #btn-style {
+        border: 1px solid #8E3DB5;
+        color: #8E3DB5;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    #btn-sensade:hover,
+    #btn-style:hover {
+        background-color: #8E3DB5;
+        color: #f5f5f5;
+        transition: background-color 0.3s ease;
+    }
+
+    .box-img-redesign {
+        width: 45%;
+        padding: 2% 2% 2% 2%;
+        display: inline-block;
+    }
+
+    .box-img-redesign:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    .title span:after {
+        content: 'multimediedesigner';
+        animation: words 6s infinite;
+    }
+
+    @keyframes words {
+
+        0%,
+        33% {
+            content: 'Multimediedesigner';
+            color: bisque;
+        }
+
+        34%,
+        75% {
+            content: 'UX/UI designer';
+            color: red;
+        }
+
+        76%,
+        100% {
+            content: 'Frontend designer';
+            color: white;
+        }
+    }
+
+    #kontakt {
+        padding: 5% 10% 5% 10%;
+        background-color: #8E3DB5;
+        color: #f5f5f5;
+    }
+
+    .bi-linkedin {
+        color: #f5f5f5;
+        font-size: 1.5rem;
+    }
+
+    #btn_up {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #8E3DB5;
+        color: #f5f5f5;
+        padding: 10px 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1rem;
+        /*opacity: 0;
+    transition: opacity 0.3s ease;
+    */
+    }
+
+    footer {
+        display: flex;
+        position: block;
+        border-top: white 1px solid;
+        height: 50px;
+        justify-content: center;
+        text-align: center;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .txtfooter {
+        margin: auto;
+    }
+
+    .box_title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #f5f5f5;
+    }
+
+    .box_container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .box_container_txt {
+        font-size: 1rem;
+        width: 100%;
+        color: #f5f5f5;
+    }
+
+    article {
+        background-size: cover;
+        height: 50vh;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2% 2% 2% 2%;
+        border-radius: 25px;
+        background-color: #8E3DB5;
+        display: inline-block;
+    }
+
+    article:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    .glas {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        height: 200px;
+        width: 20%;
+        border: 1px solid grey;
+        border-radius: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+
+    }
+
+    /* Calculator styles */
+    /* [ ]: Add calculator specific styles here */
+
+    .calculator {
+        width: 300px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 10px;
+    }
+
+    .calculator input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .calculator button {
+        width: 48%;
+        padding: 10px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+}
