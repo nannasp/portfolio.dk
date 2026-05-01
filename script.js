@@ -25,8 +25,8 @@ const paragraph = document.getElementById("paraText");
  * Tilføj funktion fra HTML
  * Eksempel:
  * ***********************/
-title.textContent = "Nanna Supavadee Pedersen";
-introText.textContent = "<h2>Multimediedesigner med fokus på visuelt design og digitale løsninger</h2>";
+title.textContent = "Portfolio 2026";
+introText.textContent = "Multimediedesigner med fokus på visuelt design og digitale løsninger";
 paragraph.textContent = "<p>Visuelt design med digitale løsninger i fokus. Frontend udvikler med erfaring i HTML, CSS og JavaScript.</p>";
 
 
@@ -107,6 +107,50 @@ if (paragraphElement) {
 function up() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// Pixel art functions
+console.log("Pixel art example:");
+
+let containerpixel = document.getElementById('containerpixel');
+
+if (containerpixel) 
+    console.log("Container for pixel art found.");
+const pixelpalette = {
+    1: "#000000",
+    2: "#FFFF00",
+    3: "#FF0000",
+}
+
+const pixelGrid = [[
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0 ],
+    [0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0 ],
+    [0, 1, 2, 2, 1, 0, 0, 0, 1, 2, 2, 1, 0, 0, 0, 0 ],
+    [0, 1, 2, 2, 1, 1, 1, 1, 1, 2, 2, 1, 0, 0, 0, 0 ],
+    [0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0 ],
+    [0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1 ],
+    [0, 0, 0, 0, 1, 2, 3, 3, 3, 3, 3, 3, 3, 3 ,2 ,1 ],
+    [0 ,0, 0, 0, 1, 2, 3, 3, 3, 3, 3, 3, 3, 3 ,2 ,1 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+    [0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1 ],
+    [0, 0, 0, 0, 1, 2, 3, 3, 3, 3, 3, 3, 3, 3 ,2 ,1 ],
+    [0 ,0, 0, 0, 1, 2, 3, 3, 3, 3, 3, 3, 3, 3 ,2 ,1 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+    [0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1 ],
+]]
 
 //calculator functions
 function add() {

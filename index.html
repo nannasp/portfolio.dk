@@ -9,146 +9,288 @@
     <!--indsæt ikon i meta feltet gerne i png format-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/wmk5uph.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="display-mobile-info"><h1>Beklager, denne side er ikke optimeret til mobilvisning. For den bedste oplevelse, besøg venligst
-            porteføljen på en desktop eller laptop computer.</h1></div>
     <div class="mobile-display">
-    <header>
-        <div id="top">
-        </div>
-        <nav>
-            <ul class="nav_list">
-                <li class="nav_menu"><a href="#" onclick="sectionHome()">Home</a></li>
-                <li class="nav_menu"><a href="#" onclick="sectionProjects()">Projekter</a></li>
-                <!-- 
+        <header>
+            <div id="top">
+            </div>
+            <nav>
+                <ul class="nav_list">
+                    <li class="nav_menu"><a href="#" onclick="sectionHome()">Home</a></li>
+                    <li class="nav_menu"><a href="#" onclick="sectionProjects()">Projekter</a></li>
+                    <!-- 
                 <li class="nav_menu"><a onclick="newpag()">Lommeregner</a></li> -->
-                <li class="nav_menu"><a href="#" onclick="kontakt()">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="homepage">
-        <h1 id="introHeader"></h1>
-        <h2 id="introText"></h2>
-        <br>
-        <button id="btn-style" onclick="scrollToSection()">Kontakt mig</button>
-    </section>
-    <section class="section-presentation">
-        <h3 class="section-presentation-header">Kreativ frontend-specialist med blik for detaljen og hjertet i processen
-        </h3>
-        <div class="section-presentation-txt">
-            <p class="section-presentation-p">Hej! Jeg er Nanna Supavadee Pedersen, og jeg elsker at bygge bro mellem en
-                god idé og en færdig digital
-                løsning. Med en værktøjskasse fyldt med frontend-teknikker, animationer og et skarpt øje for interface
-                design, hjælper jeg dig med at gøre dit projekt overskueligt og professionelt.
-                <br>
-                <br>
-                Jeg driver lysten til at skabe noget unikt og arbejder altid dedikeret for at sikre, at brugeren får
-                den bedst mulige oplevelse. Min tilgang er fleksibel, iderig og altid med et stort engagement.
-            </p>
-        </div>
-        <div class="profil">
-            <img src="matrialer/images/profil.jpg" alt="billede af mig" width="100%" style="border-radius: 20px;">
-        </div>
-    </section>
-    <section id="sectionProces">
-        <h1>Min proces</h1>
-        <h2>De fire magiske step til at få en bedre brugervenlige digitale grænseflader</h2>
-        <ul>
-            <li>1. Forståelse</li>
-            <p>Forstå brugerens behov og mål gennem
-                research, interwiew og analyse af data
-            </p>
-            <li>2. Strukturering</li>
-            <p>Strukturere brugerens behov og mål i et overblik userflows og flows
-            </p>
-            <li>3. Designe</li>
-            <p>wireframes og prototyper</p>
-            <p>Designe en løsning der matcher brugerens behov</p>
-            <li>4. Forfine</li>
-            <p>Teste løsningen med brugeren. Forfine løsningen baseret på feedback fra brugeren test og iterere indtil løsningen er optimal.
-            </p>
-        </ul>
-    </section>
-    <section>
-        <h1>Faglige Kompetencer</h1>
-        <p id="paraText"></p>
-        <div class="box_container">
-            <article>
-                <h3 class="box_title">User experience(UX)</h3>
-                <p class="box_container_txt">Research, brugerundersøgelse, wireframes, usability testing</p>
-            </article>
-            <article>
-                <h3 class="box_title">User interface(UI)</h3>
-                <p class="box_container_txt">Prototyping, responsive design og visuel identitet</p>
-            </article>
-            <article>
-                <h3 class="box_title">Frontend Development</h3>
-                <p class="box_container_txt">HTML5, CSS3, Javascript</p>
-            </article>
-        </div>
-        <h1>Værktøjer</h1>
-        <p>Figma, Adobe XD, Visual Studio Code, WordPress</p>
-    </section>
-    <section class="box_container_sensade" id="sectionProjects">
-        <h1>Projekter</h1>
-        <h1 class="box_title_sensade">Hjemmeside Sensade</h1>
-        <p>Hos Sensade ApS har jeg arbejdet med design og udvikling af prototyper til virksomhedens dashboard og
-            videreudvikle deres hjemmeside samt bidrage til andre digitale opgaver sideløbende. Arbejdet har givet mig
-            erfaring med at omsætte idéer og behov til konkrete designløsninger.</p>
-        <button id="btn-sensade" onclick="newpag_sensade()">Tryk her for at se projektet</button>
-        <div class="pic-container">
-        <img class="img_sensade" src="matrialer/sensade_website.png" alt="billede af hjemmeside sensade">
-    </div>
-    </section>
-    <section>
-        <h1>Redesign af hjemmeside</h1>
-        <h2>Beskrivelse</h2>
-        <p>Redesignet en hjemmeside med værktøjet figma. Her ligger jeg vægt på, at den skal være brugervenlig og give
-            de nødvendig informationer til brugeren. Jeg har arbejdet med at skabe en visuel identitet og et design, der
-            matcher virksomhedens værdier og målgruppe.</p>
-        <div class="box-img-redesign">
-            <p>Hjemmeside før</p>
-            <img class="img_redesign" src="matrialer/redesign.png" alt="billede af hjemmeside før redesign"
-                width="100%">
-        </div>
-        <div class="box-img-redesign">
-            <p>Hjemmeside efter</p>
-            <img class="img_redesign" src="matrialer/redesign_website.png" alt="billede af hjemmeside efter redesign"
-                width="100%">
-        </div>
-    </section>
-
-    <section id="kontakt">
-        <h3>Kontakt mig</h3>
-        <h3>Lad os skabe bedre digitale løsninger sammen</h3>
-        <p class="txt-color">Jeg er klar på at skabe digitale løsninger, der er brugervenlige og visuelt tiltalende til
-            jer.</p>
-        <ul>
-            <li class="txt-color">Email: nanna.supavadee@gmail.com</li>
-            <li><a class="txt-color" target="_blank"
-                    href="https://www.linkedin.com/in/nanna-supavadee-pedersen/">LinkedIn: nanna-supavadee-pedersen/</a>
-            </li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/nanna-supavadee-pedersen/">
-                    <!--- LinkedIn ikon i SVG format -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <li class="nav_menu"><a href="#" onclick="kontakt()">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="homepage">
+            <div class="indie-flower-regular" style="font-size: 1.5rem;">Hello world!</div>
+            <h1 class="title_project" id="introHeader"></h1>
+            <h2 id="introText"></h2>
+            <br>
+            <button id="btn-style" onclick="scrollToSection()">Kontakt mig</button>
+            <a id="btn-style" href="matrialer/cv/cv_portfolio_2026.pdf" target="_blank">CV</a>
+        </section>
+        <section class="section-presentation">
+            <div class="section-presentation-txt">
+                <p class="section-presentation-p">Hej&#128512; <br>Mit navn er Nanna Supavadee Pedersen og velkommen til
+                    mit portfolio. Jeg er en kreativ frontend-specialist med blik for detaljen og med hjertet i
+                    processen, og jeg elsker at bygge bro mellem en god idé og en færdig digital løsning.
+                    <br><br>
+                    Med en værktøjskasse fyldt med frontend-teknikker, animationer og et skarpt øje for interface
+                    design, hjælper jeg dig med at gøre dit projekt overskueligt og professionelt.
+                    <br>
+                    <br>
+                    Jeg driver lysten til at skabe noget unikt og arbejder altid dedikeret for at sikre, at brugeren får
+                    den bedst mulige oplevelse. Min tilgang er fleksibel, iderig og altid med et stort engagement.
+                </p>
+            </div>
+            <div class="profil">
+                <img src="matrialer/images/profil.jpg" alt="billede af mig" width="100%" style="border-radius: 20px;">
+            </div>
+        </section>
+        <section class="section-cv">
+            <h1>Udsnit af uddannelse, erfaring og kompetencer</h1>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                    id="School-Science-Graduation-Cap--Streamline-Pixel" height="32" width="32">
+                    <desc>
+                        School Science Graduation Cap Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <title>school-science-graduation-cap</title>
+                    <g>
                         <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <!--<div><a href="#top">top</a></div>-->
-    <div id="btn_up" onclick="up()">OP</div>
-    <footer>
-        <div class="txtfooter">
-            NSP &copy;2026 Nanna Supavadee Pedersen | Portfolio
-        </div>
-    </footer>
-    <script type="text/javascript" src="script.js"></script>
+                            d="m30.47 7.61 -1.52 0 0 3.05 -3.05 0 0 1.53 -3.05 0 0 1.52 3.05 0 0 4.57 -1.52 0 0 1.53 1.52 0 0 3.04 1.52 0 0 -10.66 1.53 0 0 13.71 -1.53 0 0 6.1L32 32l0 -6.1 -1.53 0 0 -18.29z"
+                            fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M25.9 6.09h3.05v1.52H25.9Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M24.38 22.85h1.52v1.53h-1.52Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M19.8 9.14h6.1v1.52h-6.1Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M22.85 4.57h3.05v1.52h-3.05Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M21.33 24.38h3.05v1.52h-3.05Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M21.33 19.81h3.05v1.52h-3.05Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M19.8 13.71h3.05v1.52H19.8Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M19.8 3.04h3.05v1.53H19.8Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M9.14 25.9h12.19v1.52H9.14Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M9.14 21.33h12.19v1.52H9.14Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M16.76 15.23h3.04v1.53h-3.04Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M13.71 7.61h6.09v1.53h-6.09Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M16.76 1.52h3.04v1.52h-3.04Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M13.71 0h3.05v1.52h-3.05Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M13.71 16.76h3.05v1.52h-3.05Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M10.66 1.52h3.05v1.52h-3.05Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M10.66 15.23h3.05v1.53h-3.05Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M7.61 3.04h3.05v1.53H7.61Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M6.09 24.38h3.05v1.52H6.09Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M6.09 19.81h3.05v1.52H6.09Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M7.61 13.71h3.05v1.52H7.61Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M4.57 4.57h3.04v1.52H4.57Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M4.57 22.85h1.52v1.53H4.57Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path
+                            d="m6.09 19.81 0 -1.53 -1.52 0 0 -4.57 3.04 0 0 -1.52 -3.04 0 0 -1.53 -3.05 0 0 1.53 1.52 0 0 10.66 1.53 0 0 -3.04 1.52 0z"
+                            fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M1.52 6.09h3.05v1.52H1.52Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M0 7.61h1.52v3.05H0Z" fill="#8E3DB5" stroke-width="1"></path>
+                    </g>
+                </svg>Uddannelse</h2>
+            <ul>
+                <li>Professionshøjskolen | UCN Aalborg</li>
+                <li>Multimediedesigner, 2018-2020</li>
+            </ul>
+                <p>En 2-årig erhvervsakademiuddannelse, UCN Nordjylland. Der fokuserer på digitalt design, UX, kodning og
+                indholdsproduktion. Uddannelsen er praktisk orienteret med fokus på webudvikling og apps, og den
+                indeholder et obligatorisk praktikophold, som ruster til job som UX-designer, frontend-udvikler eller
+                digital designer.</p>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                    id="Interface-Essential-Hierarchy-3--Streamline-Pixel" height="32" width="32">
+                    <desc>
+                        Interface Essential Hierarchy 3 Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <title>interface-essential-hierarchy-3</title>
+                    <g>
+                        <path d="M30.47 18.29H32v3.04h-1.53Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="m16.76 21.33 0 1.53 6.09 0 0 4.57 1.53 0 0 -4.57 6.09 0 0 -1.53 -13.71 0z"
+                            fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M10.66 12.19h12.19v1.52H10.66Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="m15.23 27.43 0 3.05 1.53 0 0 -1.53 6.09 0 0 -1.52 -7.62 0z" fill="##8E3DB5"
+                            stroke-width="1"></path>
+                        <path d="m30.47 18.29 0 -1.53 -6.09 0 0 -3.05 -1.53 0 0 3.05 -6.09 0 0 1.53 13.71 0z"
+                            fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M15.23 18.29h1.53v3.04h-1.53Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M15.23 1.52h1.53v3.05h-1.53Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M1.52 30.48h13.71V32H1.52Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M9.14 10.67h1.52v1.52H9.14Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="m9.14 6.09 6.09 0 0 -1.52 -13.71 0 0 1.52 6.09 0 0 4.58 1.53 0 0 -4.58z" fill="#8E3DB5"
+                            stroke-width="1"></path>
+                        <path d="M1.52 25.9h13.71v1.53H1.52Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M1.52 0h13.71v1.52H1.52Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M0 27.43h1.52v3.05H0Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M0 1.52h1.52v3.05H0Z" fill="#8E3DB5" stroke-width="1"></path>
+                    </g>
+                </svg>Erfaring</h2>
+            <ul>
+                <li>Jensen Brød ApS, Teamleder & Multimediedesigner 2022-nu</li>
+                <li>Sensade ApS, Multimediedesigner, 2021-2021</li>
+                <li>Foxgarden ApS, Praktikant, 2020-2020</li>
+            </ul>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                    id="Computers-Devices-Electronics-Keyboard-Button--Streamline-Pixel" height="32" width="32">
+                    <desc>
+                        Computers Devices Electronics Keyboard Button Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <title>computers-devices-electronics-keyboard-button</title>
+                    <g>
+                        <path
+                            d="M30.48 28.95h-1.52v1.53H18.29v-3.05h9.14V16.76h1.53v-1.52h-3.05V3.05h-1.52v10.66h-1.53v1.53H10.67v-1.53H9.15v1.53H0v13.71h1.53v-1.52h12.19v1.52h1.52v-1.52h1.53v1.52h-1.53v1.53H3.05V32H32V18.29h-1.52ZM12.2 25.9H1.53v-9.14H12.2Zm3.04 0v-9.14h10.67v9.14Z"
+                            fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M28.96 16.76h1.52v1.53h-1.52Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M27.43 27.43h1.53v1.52h-1.53Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M22.86 1.52h1.53v1.53h-1.53Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M21.34 19.81h1.52v1.52h-1.52Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M21.34 12.19h1.52v1.52h-1.52Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M19.81 18.29h1.53v1.52h-1.53Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="m22.86 22.86 -4.57 0 0 -1.53 -1.52 0 0 3.05 7.62 0 0 -3.05 -1.53 0 0 1.53z"
+                            fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M18.29 19.81h1.52v1.52h-1.52Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path
+                            d="m16.77 3.05 -1.53 0 0 1.52 -1.52 0 0 -1.52 -1.52 0 0 1.52 -1.53 0 0 1.53 1.53 0 0 1.52 1.52 0 0 1.52 1.52 0 0 -1.52 1.53 0 0 -1.52 1.52 0 0 -1.53 -1.52 0 0 -1.52z"
+                            fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M21.34 12.19V1.52h1.52V0H7.62v13.71h1.53v-1.52ZM9.15 1.52h10.66v9.15H9.15Z"
+                            fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M7.62 ₁₉₈₁h₁₅₃v₃₀₅H7.6₂Z" fill="#8E3DB5" stroke-width="₁"></path>
+                        <path d="M4.58 18.29h3.04v1.52H4.58Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M4.58 22.86h3.04v1.52H4.58Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M3.05 19.81h1.53v3.05H3.05Z" fill="#8E3DB5" stroke-width="1"></path>
+                        <path d="M1.53 28.95h1.52v1.53H1.53Z" fill="#8E3DB5" stroke-width="1"></path>
+                    </g>
+                </svg>Programmer jeg bruger</h2>
+            <ul>
+                <li>Figma: Template, Prototyping, mockups af hjemmesider</li>
+                <li>Adobe XD: Illustrator, Photoshop og InDesign</li>
+                <li>Visual Studio Code: HTML5, CSS3 og JavaScript</li>
+                <li>WordPress: Elementor</li>
+            </ul>
+        </section>
+        <section id="sectionProces">
+            <h1>Min proces</h1>
+            <h2>De fire magiske step til at få en bedre brugervenlige digitale grænseflader</h2>
+            <ul>
+                <li>1. Forståelse</li>
+                <p>Forstå brugerens behov og mål gennem
+                    research, interwiew og analyse af data
+                </p>
+                <li>2. Strukturering</li>
+                <p>Strukturere brugerens behov og mål i et overblik userflows og flows
+                </p>
+                <li>3. Designe</li>
+                <p>wireframes og prototyper</p>
+                <p>Designe en løsning der matcher brugerens behov</p>
+                <li>4. Forfine</li>
+                <p>Teste løsningen med brugeren. Forfine løsningen baseret på feedback fra brugeren test og iterere
+                    indtil løsningen er optimal.
+                </p>
+            </ul>
+        </section>
+        <section>
+            <h1>Faglige Kompetencer</h1>
+            <p id="paraText"></p>
+            <div class="box_container">
+                <article>
+                    <h3 class="box_title">User experience(UX)</h3>
+                    <p class="box_container_txt">Research, brugerundersøgelse, wireframes, usability testing</p>
+                </article>
+                <article>
+                    <h3 class="box_title">User interface(UI)</h3>
+                    <p class="box_container_txt">Prototyping, responsive design og visuel identitet</p>
+                </article>
+                <article>
+                    <h3 class="box_title">Frontend Development</h3>
+                    <p class="box_container_txt">HTML5, CSS3, Javascript</p>
+                </article>
+            </div>
+            <h1>Værktøjer</h1>
+            <p>Figma, Adobe XD, Visual Studio Code, WordPress</p>
+        </section>
+        <h1 class="title_project">Projekter</h1>
+        <section class="box_container_sensade" id="sectionProjects">
+            <h1 class="box_title_sensade">Hjemmeside Sensade</h1>
+            <p>Hos Sensade ApS har jeg arbejdet med design og udvikling af prototyper til virksomhedens dashboard og
+                videreudvikle deres hjemmeside samt bidrage til andre digitale opgaver sideløbende. Arbejdet har givet
+                mig
+                erfaring med at omsætte idéer og behov til konkrete designløsninger.</p>
+            <button id="btn-sensade" onclick="newpag_sensade()">Tryk her for at se projektet</button>
+            <div class="pic-container">
+                <img class="img_sensade" src="matrialer/sensade_website.png" alt="billede af hjemmeside sensade"
+                    style="width: 100%;">
+            </div>
+        </section>
+        <section class="box_container_redesign">
+            <h1>Redesign af hjemmeside</h1>
+            <h2>Beskrivelse</h2>
+            <p>Redesignet en hjemmeside på kun 5 minutter med værktøjet figma. Her ligger jeg vægt på, at den skal være
+                brugervenlig og give
+                de nødvendig informationer til brugeren. Jeg har arbejdet med at skabe en visuel identitet og et design,
+                der
+                matcher virksomhedens værdier og målgruppe.</p>
+            <div class="box-img-redesign">
+                <p>Hjemmeside før</p>
+                <img class="img_redesign" src="matrialer/redesign.png" alt="billede af hjemmeside før redesign"
+                    width="100%">
+            </div>
+            <div class="box-img-redesign">
+                <p>Hjemmeside efter</p>
+                <img class="img_redesign" src="matrialer/redesign_website.png"
+                    alt="billede af hjemmeside efter redesign" width="100%">
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <div class="line">
+            <h3 class="indie-flower-regular">Skab forbindelsen her &#128513;</h3>
+            <h3>Lad os skabe bedre digitale løsninger sammen</h3>
+            <p class="txt-color">Jeg er klar på at designe og udvikle digitale løsninger, der er brugervenlige og visuelt
+                tiltalende til jeres bruger.</p>
+                <br>
+                <br>
+            <ul>
+                <li class="txt-color">Email: nanna.supavadee@gmail.com</li>
+                <li><a class="txt-color" target="_blank"
+                        href="https://www.linkedin.com/in/nanna-supavadee-pedersen/">LinkedIn:
+                        nanna-supavadee-pedersen/</a>
+                </li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/nanna-supavadee-pedersen/">
+                        <!--- LinkedIn ikon i SVG format -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <fieldset>
+                <legend>Send en besked her</legend>
+                <form action="mailto:nanna.supavadee@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" id="name" name="name" placeholder="Dit navn" required><br>
+                    <input type="email" id="email" name="email" placeholder="Din email" required><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Din besked" required></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+            </fieldset>
+        </section>
+        <!--<div><a href="#top">top</a></div>-->
+        <div id="btn_up" onclick="up()">OP</div>
+        <footer>
+            <div class="txtfooter">
+                NSP &copy;2026 Nanna Supavadee Pedersen | Portfolio
+            </div>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
     </div>
 </body>
 

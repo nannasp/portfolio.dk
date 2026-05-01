@@ -1,32 +1,46 @@
 /*mobile screen*/
 @media screen and (max-width: 767px) {
-    body {
-        margin: 15px;
-        font-size: 1.2rem;
-        display: block;
-        line-height: 1.5;
-        padding: 0;
-        width: 100wh;
-        height: vh;
-        background-color: #222222;
-        color: #f5f5f5;
-        font-family: "roboto-mono", monospace;
-        font-weight: 400;
-        font-style: normal;
-    }
+        body {
+            margin: 5px;
+            font-size: 1.2rem;
+            display: block;
+            line-height: 1.5;
+            padding: 0;
+            width: 100wh;
+            height: vh;
+            background-color: #f5f5f5;
+            color: #8E3DB5;
+            font-family: "roboto-mono", monospace;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            list-style: none;
+        }
 
-    .display-mobile-info {
-        margin: 5%;
-        padding: 10%;
-        display: block;
-        text-align: center;
-        font-size: 10px;
-    }
-    .mobile-display {
-        display: none;
-    }
+        h1 {
+            line-height: 1.2;
+        }
 
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        a {
+            color: #8E3DB5;
+            text-decoration: none;
+        }
+
+        #btn-style, #btn-sensade {
+            border: 1px solid #8E3DB5;
+            color: #8E3DB5;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+        }
 }
+
 
 /*min width skærmstørrelse */
 @media screen and (min-width: 768px) {
@@ -51,7 +65,11 @@
     }
 
     h1 {
-        font-size: 1.5 rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 1.2rem;
         font-weight: 700;
     }
 
@@ -64,12 +82,19 @@
         position: sticky;
     }
 
+    .indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
     ul {
         text-decoration: none;
     }
 
     li {
         list-style: none;
+        font-size: 1rem;
     }
 
     .nav_list {
@@ -98,6 +123,7 @@
 
     .homepage {
         text-align: center;
+        cursor: url('matrialer/icons/sunshine.png'), auto;
     }
 
     .introtext {
@@ -111,6 +137,7 @@
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
+        cursor: url('matrialer/icons/hi.png'), auto;
     }
 
     .section-presentation-txt {
@@ -147,9 +174,10 @@
     }
 
     p {
-        width: 60%;
+        width: 80%;
         height: 10%;
         color: #8E3DB5;
+        font-size: 1rem;
     }
 
     .txt-color {
@@ -160,6 +188,26 @@
         color: #f5f5f5;
         font-weight: 700;
         transition: color 0.3s ease;
+    }
+
+    .section-cv {
+        text-align: center;
+    }
+
+    .section-cv p {
+        width: 80%;
+        margin: auto;
+    }
+
+    .title_project {
+        font-size: 5rem;
+        font-weight: 700;
+        color: #8E3DB5;
+        -webkit-text-fill-color: #f5f5f5;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #8E3DB5;
+        text-align: center;
+        margin: 0;
     }
 
     .pic-container {
@@ -173,10 +221,10 @@
         border-radius: 10px;
     }
 
-    .box_container_sensade {
+    .box_container_sensade, .box_container_redesign {
         width: 60%;
         border: 1px;
-        border-color: #003A60;
+        border-color: #8E3DB5;
         border-style: solid;
         border-radius: 10px;
         padding: 2% 8% 2% 8%;
@@ -244,6 +292,7 @@
     }
 
     #kontakt {
+        display: flex;
         padding: 5% 10% 5% 10%;
         background-color: #8E3DB5;
         color: #f5f5f5;
@@ -334,6 +383,56 @@
         margin-right: auto;
         width: 20%;
 
+    }
+
+    .line {
+        flex: 1;
+    }
+
+    fieldset {
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 20px;
+        width: 50%;
+        margin: auto;
+        object-fit: cover;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    
+    input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+        color: #f5f5f5;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 30%; 
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #f5f5f5;
+        background-color: #8E3DB5;
+        color: #f5f5f5;
+    }
+    input[type="text"]:focus {
+        background-color: none;
+    }
+
+    /* Pixel art styles */
+    /* [ ]: Add pixel art specific styles here */
+    #containerpixel {
+        display: grid;
+        grid-template-columns: repeat(16, 0fr);
+    }
+    #containerpixel div {
+        display: grid;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid #333;
+        height: 10px;
+        width: 10px;
     }
 
     /* Calculator styles */
