@@ -32,12 +32,18 @@
         }
 
         #btn-style, #btn-sensade {
-            border: 1px solid #8E3DB5;
-            color: #8E3DB5;
+            border: 1px solid #71C24A;
+            color: #71C24A;
             padding: 10px 20px;
             font-size: 1rem;
             border-radius: 30px;
             cursor: pointer;
+        }
+
+        #btn-style:hover, #btn-sensade:hover {
+            background-color: #8e3db5;
+            color: #f5f5f5;
+            transition: background-color 0.3s ease;
         }
 }
 
