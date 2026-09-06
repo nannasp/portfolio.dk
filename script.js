@@ -104,9 +104,22 @@ if (paragraphElement) {
     console.error('element with not found');
 }
 
+// 1. Funktion der scroller til toppen af siden
 function up() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+ // 2. Funktionen der løbende holder øje med scroll og skjuler/viser knappen
+window.onscroll = function() {
+    let btn = document.getElementById("btn_up");
+    
+    // Hvis der er scrollet mere end 200px ned, vis knappen – ellers skjul den
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
 
 // Pixel art functions
 console.log("Pixel art example:");
