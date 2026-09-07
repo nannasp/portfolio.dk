@@ -85,6 +85,10 @@ function newpag_sensade() {
     window.open("https://www.sensade.com", "_blank");
 }
 
+function newpag_jtcover() {
+    window.open("https://www.jtcover.com", "_blank");
+}
+
 console.log("Hello World! This is my portfolio website.");
 
 // En pop-up boks vil komme frem, når man åbner i en ny browser
