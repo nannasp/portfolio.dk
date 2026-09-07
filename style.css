@@ -148,6 +148,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         cursor: url('matrialer/icons/hi.png'), auto;
+        background-color: #F4E8FA;
     }
 
     .section-presentation-txt {
